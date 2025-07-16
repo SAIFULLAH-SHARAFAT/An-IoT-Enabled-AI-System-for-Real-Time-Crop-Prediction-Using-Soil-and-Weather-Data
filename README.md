@@ -206,9 +206,9 @@ If you use this code or data in your research, please cite:
 
 ```bibtex
 @article{Sharafat2025CropIoT,
-  author    = {MD Shaifullah Sharafat and Nilavro Das Kabya and Rahimul Islam Emu and Mehrab Uddin Ahmed and Jakaria Chowdhury Onik and Mohammad Aminul Islam and Riasat Khan},
+  author    = {MD Shaifullah Sharafat, Nilavro Das Kabya, Rahimul Islam Emu, Mehrab Uddin Ahmed, Jakaria Chowdhury Onik, Mohammad Aminul Islam and Riasat Khan},
   title     = {An IoT‑Enabled AI System for Real‑Time Crop Prediction Using Soil and Weather Data in Precision Agriculture},
-  journal   = {IEEE Internet of Things Journal},
+  journal   = {Smart Agricultural Technology},
   year      = {2025},
   note      = {In review}
 }
