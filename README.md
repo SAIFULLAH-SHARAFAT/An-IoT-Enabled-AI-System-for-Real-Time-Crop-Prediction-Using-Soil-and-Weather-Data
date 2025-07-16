@@ -1,11 +1,6 @@
 # IoT‑Enabled AI System for Real‑Time Crop Prediction
 
 > **Precision agriculture meets edge AI – real‑time crop recommendations from soil & weather data on a Raspberry Pi 5**
-
-<p align="center">
-  <img src="docs/images/teaser_hardware.jpg" width="520" alt="IoT‑enabled crop prediction set‑up" />
-</p>
-
 ---
 
 ## Table of Contents
@@ -224,8 +219,10 @@ Make sure to follow the style guidelines in `CONTRIBUTING.md` and run `pre‑com
 ---
 
 ## License
-
-This project is released under the **MIT License** – see [LICENSE](LICENSE) for details.
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+This project is released under the **Apache License** – see [LICENSE](LICENSE) for details.
 
 ---
 
