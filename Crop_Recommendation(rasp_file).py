@@ -35,10 +35,10 @@ client = ModbusClient(
     timeout=1
 )
 
-# Function to return rainfall based on the month
+# Function to return rainfall based on the month Bangladesh Agro-Meteorological Information Service (BAMIS) data 
 def get_rainfall():
     month = time.localtime().tm_mon
-    rainfall_values = {
+    rainfall_values = {                                                    
         1: 9.4, 2: 36.2, 3: 155.3, 4: 375.6,
         5: 569.6, 6: 818.4, 7: 819.2, 8: 612.6,
         9: 535.9, 10: 223.9, 11: 30.4, 12: 9.4
