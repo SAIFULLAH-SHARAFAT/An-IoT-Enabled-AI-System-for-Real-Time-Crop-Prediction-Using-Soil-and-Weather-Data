@@ -74,11 +74,24 @@ We present an **edge‑friendly crop recommendation pipeline** that fuses real�
 
 | Source                      | Samples | Classes  | Features                                             |
 | --------------------------- | ------- | -------- | ---------------------------------------------------- |
-| SRDI + BAMIS (Habiganj, BD) | 3 300   | 22 crops | N, P, K, pH, soil temp, moisture, rainfall, humidity |
+| SRDI + BAMIS (Habiganj, BD) | 3,300   | 22 crops | N, P, K, pH, soil temp, moisture, rainfall, humidity |
 
-> **Note** – data will be released **after journal acceptance**. A toy subset is provided in `data/sample_dataset.csv` for quick experimentation.
+The Habiganj soil‑weather dataset used in our paper is here:
+
+* **GitHub (XLSX)** – [New Final DataSet Without Sulphur.xlsx](https://github.com/SAIFULLAH-SHARAFAT/An-IoT-Enabled-AI-System-for-Real-Time-Crop-Prediction-Using-Soil-and-Weather-Data/blob/main/New%20Final%20DataSet%20Without%20Sulphur.xlsx)
+* **Rows × Cols** – 3 300 × 9 (8 features + `crop` label)
+* **License** – Apache 2.0 (same as this repo)
+
+Download via CLI:
+
+```bash
+wget -O data/habiganj_dataset.xlsx "https://raw.githubusercontent.com/SAIFULLAH-SHARAFAT/An-IoT-Enabled-AI-System-for-Real-Time-Crop-Prediction-Using-Soil-and-Weather-Data/main/New%20Final%20DataSet%20Without%20Sulphur.xlsx"
+```
+
+After placing the file under `data/`, proceed with preprocessing & training as described below.
 
 ---
+
 
 ## Model Zoo & Results
 
@@ -219,10 +232,14 @@ Make sure to follow the style guidelines in `CONTRIBUTING.md` and run `pre‑com
 ---
 
 ## License
+
+```
 Apache License
 Version 2.0, January 2004
 http://www.apache.org/licenses/
-This project is released under the **Apache License** – see [LICENSE](LICENSE) for details.
+```
+
+See [`LICENSE`](LICENSE) for the full text.
 
 ---
 
