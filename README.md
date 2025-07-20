@@ -78,16 +78,16 @@ The Habiganj soil‑weather dataset used in our paper is publicly hosted:
   Rows × Cols = 3 300 × 9 (8 features + `crop` label)
   License = Apache 2.0 (same as repo)
 
-## ML Training Notebook
+## ML & DL Training Notebooks
 
-A Google Colab‑ready notebook walks through the full **machine‑learning pipeline**—from EDA and preprocessing to Optuna hyper‑parameter search, evaluation, and model export:
+Run the full experimentation pipeline directly in Google Colab or clone locally. Two notebooks are provided:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/SAIFULLAH-SHARAFAT/An-IoT-Enabled-AI-System-for-Real-Time-Crop-Prediction-Using-Soil-and-Weather-Data/blob/main/CSE499RTK_ML2025.ipynb)
+| Notebook                 | Scope                                                                 | Colab                                                                                                                                                                                                                                   |
+| ------------------------ | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `CSE499RTK_ML2025.ipynb` | Classical ML & stacking ensemble (EDA → Optuna tuning → model export) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/SAIFULLAH-SHARAFAT/An-IoT-Enabled-AI-System-for-Real-Time-Crop-Prediction-Using-Soil-and-Weather-Data/blob/main/CSE499RTK_ML2025.ipynb) |
+| `CSE499B_Tabnet.ipynb`   | Deep‑learning workflow with TabNet (feature sparsity, early stopping) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/SAIFULLAH-SHARAFAT/An-IoT-Enabled-AI-System-for-Real-Time-Crop-Prediction-Using-Soil-and-Weather-Data/blob/main/CSE499B_Tabnet.ipynb)   |
 
-* **Filename**: `CSE499RTK_ML2025.ipynb`
-* **Outputs**: `models/best_rf.pkl`, metric logs, ROC & confusion‑matrix plots under `reports/`.
-
-> **Local run**: `jupyter lab notebooks/CSE499RTK_ML2025.ipynb --NotebookApp.token=''`
+> **Tip:** Colab will prompt you to copy the notebook to your own workspace before executing. GPU is required for the speed up training.
 
 ---
 
