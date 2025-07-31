@@ -262,12 +262,15 @@ See [`LICENSE`](LICENSE) the full text.
 If you use this repository, please cite:
 
 ```bibtex
-@article{sharafat2025iotcrop,
-  title   = {An IoT‑Enabled AI System for Real‑Time Crop Prediction Using Soil and Weather Data in Precision Agriculture},
-  author  = {Sharafat, Md Shaifullah and Kabya, Nilavro Das and Islam, Rahimul and Ahmed, Mehrab Uddin and Onik, Jakaria Chowdhury and Islam, Mohammad Aminul and Khan, Riasat},
-  journal = {IEEE Transactions on Industrial Informatics},
-  year    = {2025},
-  note    = {Early Access}
+@article{sharafat2025iot,
+  title={An IoT-Enabled AI System for Real-Time Crop Prediction Using Soil and Weather Data in Precision Agriculture},
+  author={Sharafat, M.D. Shaifullah and Kabya, Nilavro Das and Emu, Rahimul Islam and Ahmed, Mehrab Uddin and Onik, Jakaria Chowdhury and Islam, Mohammad Aminul and Khan, Riasat},
+  journal={Smart Agricultural Technology},
+  pages={101263},
+  year={2025},
+  publisher={Elsevier},
+  doi={10.1016/j.atech.2025.101263},
+  url={http://dx.doi.org/10.1016/j.atech.2025.101263}
 }
 ```
 
