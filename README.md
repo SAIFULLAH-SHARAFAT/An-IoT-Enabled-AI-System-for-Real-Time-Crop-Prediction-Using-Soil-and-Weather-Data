@@ -259,7 +259,7 @@ See [`LICENSE`](LICENSE) the full text.
 
 ## Citation
 
-If you use this repository, please cite:
+If you use this repository, please export citation to BibTex:
 
 ```bibtex
 @article{SHARAFAT2025101263,
