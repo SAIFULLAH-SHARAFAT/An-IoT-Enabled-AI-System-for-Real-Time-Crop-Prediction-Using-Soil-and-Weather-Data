@@ -262,15 +262,27 @@ See [`LICENSE`](LICENSE) the full text.
 If you use this repository, please cite:
 
 ```bibtex
-@article{sharafat2025iot,
-  title={An IoT-Enabled AI System for Real-Time Crop Prediction Using Soil and Weather Data in Precision Agriculture},
-  author={Sharafat, M.D. Shaifullah and Kabya, Nilavro Das and Emu, Rahimul Islam and Ahmed, Mehrab Uddin and Onik, Jakaria Chowdhury and Islam, Mohammad Aminul and Khan, Riasat},
-  journal={Smart Agricultural Technology},
-  pages={101263},
-  year={2025},
-  publisher={Elsevier},
-  doi={10.1016/j.atech.2025.101263},
-  url={http://dx.doi.org/10.1016/j.atech.2025.101263}
+@article{SHARAFAT2025101263,
+title = {An IoT-enabled AI system for real-time crop prediction using soil and weather data in precision agriculture},
+journal = {Smart Agricultural Technology},
+volume = {12},
+pages = {101263},
+year = {2025},
+issn = {2772-3755},
+doi = {https://doi.org/10.1016/j.atech.2025.101263},
+url = {https://www.sciencedirect.com/science/article/pii/S2772375525004940},
+author = {MD Shaifullah Sharafat and Nilavro Das Kabya and Rahimul Islam Emu and Mehrab Uddin Ahmed and Jakaria Chowdhury Onik and Mohammad Aminul Islam and Riasat Khan},
+keywords = {Crop recommendation, Ensemble model, Precision agriculture, Smart irrigation, ThingsBoard cloud},
+abstract = {Context
+Precision agriculture leverages advanced technologies such as the Internet of Things (IoT) and artificial intelligence (AI) to enhance crop productivity by providing data-driven insights. In Bangladesh, optimizing crop recommendations using real-time soil and environmental data is crucial for improving agricultural decision-making. However, integrating AI models with IoT devices for instantaneous crop prediction remains a challenge due to computational constraints and the need for model interpretability.
+Objective
+This study aims to develop an IoT-based crop prediction system that utilizes real-time data on soil nutrients, pH, and weather conditions. The system employs machine learning and deep learning techniques to recommend suitable crops based on local environmental factors. The implementation focuses on deploying the best-performing models on an edge device for real-time predictions as well as ensuring accuracy, efficiency, and accessibility for farmers and agricultural stakeholders.
+Methods
+The system was developed in Bangladesh using proprietary data from the Soil Resource Development Institute, supported by Habiganj Agricultural University, Sylhet. The dataset consists of 3,300 samples covering 22 crops and eight soil and environmental features. Several machine learning algorithms, including Random Forest, Gradient Boosting, and Stacking ensembles, as well as deep learning models such as TabNet, were evaluated for crop prediction. The best-performing models were deployed on a Raspberry Pi 5 edge device for real-time inference. A weather API was integrated for local humidity and rainfall data, while an RS485 7-in-1 agricultural soil sensor provided real-time measurements of nitrogen (N), phosphorus (P), potassium (K), pH, temperature, and soil moisture. The predictions were displayed on the ThingsBoard IoT platform. Model interpretability was enhanced using the explainable AI technique LIME. A user survey involving farmers, agricultural researchers, and students assessed the usability, accuracy, and reliability of the system.
+Results and conclusions
+The highest accuracy among machine learning models was achieved using Random Forest (95.8%) and Gradient Boosting (95.5%). The Stacking ensemble technique, with Support Vector Classifier (SVC) as the meta-classifier, achieved the highest overall accuracy of 95.9%. Among deep learning models, TabNet performed best with an accuracy of 92%. The Random Forest model was selected for deployment on the Raspberry Pi due to its lowest inference time and compatibility with Python and TensorFlow Lite. User feedback from the survey provided insights into the system's practical effectiveness and potential areas for improvement. The results demonstrate that integrating AI-driven crop recommendation models with IoT devices can support real-time agricultural decision-making, improving precision farming outcomes.
+Significance
+This study contributes to precision agriculture by demonstrating an IoT-based crop prediction system that integrates AI-driven recommendations with real-time environmental monitoring. The deployment of the best-performing model on an edge device ensures accessibility and efficiency for users in agricultural settings. By leveraging explainable AI techniques, the study enhances model interpretability, fostering trust and usability among farmers and agricultural researchers. The findings highlight the potential of AI and IoT in improving crop selection, optimizing resource usage, and supporting sustainable agricultural practices in Bangladesh and beyond. The implementation code and private dataset are available at: https://github.com/SAIFULLAH-SHARAFAT/An-IoT-Enabled-AI-System-for-Real-Time-Crop-Prediction-Using-Soil-and-Weather-Data.}
 }
 ```
 
