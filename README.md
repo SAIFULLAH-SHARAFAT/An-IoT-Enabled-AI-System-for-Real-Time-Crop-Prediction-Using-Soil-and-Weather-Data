@@ -285,5 +285,5 @@ If you use this repository, please cite:
 
 ---
 
-<p align="center">🍀 Smart Farming and Precision Agriculture in Bangladesh: A Transformative Initiative by Md. Shaifullah Sharafat, accompanied by Rahimul Islam, Nilavro Das Kabya
+<p align="center">🍀 Smart Farming and Precision Agriculture in Bangladesh: A Transformative Initiative by MD Shaifullah Sharafat, accompanied by Rahimul Islam, Nilavro Das Kabya
  🍀</p>
