@@ -258,25 +258,26 @@ See [`LICENSE`](LICENSE) the full text.
 ---
 
 ## Citation
-Please export citation:
+
+If you use this work, please cite:
+
 ### IEEE
 M. S. Sharafat, N. D. Kabya, R. I. Emu, M. U. Ahmed, J. C. Onik, M. A. Islam, and R. Khan, “An IoT-enabled AI system for real-time crop prediction using soil and weather data in precision agriculture,” *Smart Agricultural Technology*, vol. 12, p. 101263, 2025, doi: 10.1016/j.atech.2025.101263.
 
-If you use this repository, BibTex:
-
+### BibTeX
 ```bibtex
 @article{SHARAFAT2025101263,
-title = {An IoT-enabled AI system for real-time crop prediction using soil and weather data in precision agriculture},
-journal = {Smart Agricultural Technology},
-volume = {12},
-pages = {101263},
-year = {2025},
-issn = {2772-3755},
-doi = {https://doi.org/10.1016/j.atech.2025.101263},
-url = {https://www.sciencedirect.com/science/article/pii/S2772375525004940},
-author = {MD Shaifullah Sharafat and Nilavro Das Kabya and Rahimul Islam Emu and Mehrab Uddin Ahmed and Jakaria Chowdhury Onik and Mohammad Aminul Islam and Riasat Khan},
-keywords = {Crop recommendation, Ensemble model, Precision agriculture, Smart irrigation, ThingsBoard cloud},
-abstract = {Context
+  title = {An IoT-enabled AI system for real-time crop prediction using soil and weather data in precision agriculture},
+  journal = {Smart Agricultural Technology},
+  volume = {12},
+  pages = {101263},
+  year = {2025},
+  issn = {2772-3755},
+  doi = {https://doi.org/10.1016/j.atech.2025.101263},
+  url = {https://www.sciencedirect.com/science/article/pii/S2772375525004940},
+  author = {MD Shaifullah Sharafat and Nilavro Das Kabya and Rahimul Islam Emu and Mehrab Uddin Ahmed and Jakaria Chowdhury Onik and Mohammad Aminul Islam and Riasat Khan},
+  keywords = {Crop recommendation, Ensemble model, Precision agriculture, Smart irrigation, ThingsBoard cloud},
+  abstract = {Context
 Precision agriculture leverages advanced technologies such as the Internet of Things (IoT) and artificial intelligence (AI) to enhance crop productivity by providing data-driven insights. In Bangladesh, optimizing crop recommendations using real-time soil and environmental data is crucial for improving agricultural decision-making. However, integrating AI models with IoT devices for instantaneous crop prediction remains a challenge due to computational constraints and the need for model interpretability.
 Objective
 This study aims to develop an IoT-based crop prediction system that utilizes real-time data on soil nutrients, pH, and weather conditions. The system employs machine learning and deep learning techniques to recommend suitable crops based on local environmental factors. The implementation focuses on deploying the best-performing models on an edge device for real-time predictions as well as ensuring accuracy, efficiency, and accessibility for farmers and agricultural stakeholders.
@@ -288,8 +289,6 @@ Significance
 This study contributes to precision agriculture by demonstrating an IoT-based crop prediction system that integrates AI-driven recommendations with real-time environmental monitoring. The deployment of the best-performing model on an edge device ensures accessibility and efficiency for users in agricultural settings. By leveraging explainable AI techniques, the study enhances model interpretability, fostering trust and usability among farmers and agricultural researchers. The findings highlight the potential of AI and IoT in improving crop selection, optimizing resource usage, and supporting sustainable agricultural practices in Bangladesh and beyond. The implementation code and private dataset are available at: https://github.com/SAIFULLAH-SHARAFAT/An-IoT-Enabled-AI-System-for-Real-Time-Crop-Prediction-Using-Soil-and-Weather-Data.}
 }
 ```
-
----
 
 ## Acknowledgements
 
