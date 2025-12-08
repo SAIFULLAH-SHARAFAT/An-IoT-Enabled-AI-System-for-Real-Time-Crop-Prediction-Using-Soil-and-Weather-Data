@@ -262,8 +262,9 @@ See [`LICENSE`](LICENSE) the full text.
 If you use this work, please cite:
 
 ### IEEE
+```ieee
 M. S. Sharafat, N. D. Kabya, R. I. Emu, M. U. Ahmed, J. C. Onik, M. A. Islam, and R. Khan, “An IoT-enabled AI system for real-time crop prediction using soil and weather data in precision agriculture,” *Smart Agricultural Technology*, vol. 12, p. 101263, 2025, doi: 10.1016/j.atech.2025.101263.
-
+```
 ### BibTeX
 ```bibtex
 @article{SHARAFAT2025101263,
