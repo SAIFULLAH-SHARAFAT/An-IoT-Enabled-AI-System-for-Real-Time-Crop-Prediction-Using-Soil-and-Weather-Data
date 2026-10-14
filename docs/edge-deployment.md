@@ -63,6 +63,8 @@ crop-rec edge --model-path random_search_model.pkl --scaler-path scaler.pkl --en
 ## Notes
 
 - The telemetry payload is identical to the one produced by the deployed prototype so existing ThingsBoard widgets keep working.
-- The monthly rainfall table is carried over verbatim from the prototype. Its values (9.4-819.2) are on a larger scale
-  than the `Rainfall(cm)` column of the training data (40-250); review this before relying on rainfall-sensitive predictions.
+- The monthly rainfall table is carried over verbatim from the prototype. It holds BAMIS averages for Dhaka, where the
+  prototype was tested (`--location Dhaka`), whereas the training data was collected in Habiganj District, so its values
+  (9.4-819.2) are larger than the `Rainfall(cm)` column of the dataset (40-250). For a deployment elsewhere, replace the
+  table in `edge/weather.py` with figures for that location.
 - Weather requests use HTTPS and have timeouts; failures skip the cycle instead of crashing the service.

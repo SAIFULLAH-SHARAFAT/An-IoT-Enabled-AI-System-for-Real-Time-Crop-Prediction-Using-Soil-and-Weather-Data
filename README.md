@@ -64,7 +64,7 @@ Total prototype cost reported in the paper: **36 500 BDT (about USD 297)**, excl
 │   └── cli/                     # argparse sub-commands behind `crop-rec`
 ├── tests/                       # pytest suite
 ├── data/                        # New Final DataSet Without Sulphur.xlsx
-├── docs/                        # architecture, reproducing results, edge deployment, project slides
+├── docs/                        # architecture, reproducing results, edge deployment
 ├── old/                         # archived original notebooks (outputs removed) and the original Pi script
 ├── scripts/                     # maintenance utilities
 ├── pyproject.toml  Dockerfile  Makefile  CITATION.cff  CHANGELOG.md  CONTRIBUTING.md  LICENSE
