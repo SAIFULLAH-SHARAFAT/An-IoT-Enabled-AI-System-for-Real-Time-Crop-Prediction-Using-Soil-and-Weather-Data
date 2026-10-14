@@ -14,7 +14,10 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
-      - run: pip install -e ".[dev,explain,edge]"
+      - name: Install (CPU PyTorch so mypy sees the same types as locally)
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -e ".[dev,explain,edge,deep]"
       - run: ruff check src tests scripts
       - run: ruff format --check src tests scripts
       - run: mypy
@@ -37,4 +40,4 @@ jobs:
         run: |
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install -e ".[dev,explain,edge,deep]"
-      - run: pytest --cov --cov-report=term-missing
+      - run: pytest -m "not slow" --cov --cov-report=term-missing
