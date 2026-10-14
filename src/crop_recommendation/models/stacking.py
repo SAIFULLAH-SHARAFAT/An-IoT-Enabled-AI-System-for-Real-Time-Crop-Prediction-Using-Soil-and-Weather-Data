@@ -22,8 +22,8 @@ from sklearn.ensemble import (
 )
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
-from sklearn.naive_bayes import GaussianNB
 from sklearn.multiclass import OneVsRestClassifier
+from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
@@ -40,7 +40,13 @@ BASE_LEARNERS: dict[str, BaseFactory] = {
         learning_rate=0.1, max_depth=5, n_estimators=150, subsample=0.8, random_state=seed
     ),
     "catboost": lambda seed: CatBoostClassifier(
-        depth=4, iterations=1000, l2_leaf_reg=1, learning_rate=0.05, random_state=seed, verbose=0, allow_writing_files=False
+        depth=4,
+        iterations=1000,
+        l2_leaf_reg=1,
+        learning_rate=0.05,
+        random_state=seed,
+        verbose=0,
+        allow_writing_files=False,
     ),
     "dt": lambda seed: DecisionTreeClassifier(
         max_depth=5, min_samples_split=2, min_samples_leaf=1, random_state=seed
@@ -85,7 +91,11 @@ STACK_SPECS: dict[str, StackSpec] = {
             n_iter=3,
             base_overrides={
                 "gb": lambda seed: GradientBoostingClassifier(
-                    learning_rate=0.1, max_depth=5, n_estimators=100, subsample=0.8, random_state=seed
+                    learning_rate=0.1,
+                    max_depth=5,
+                    n_estimators=100,
+                    subsample=0.8,
+                    random_state=seed,
                 ),
                 "catboost": lambda seed: CatBoostClassifier(
                     depth=4,
@@ -93,7 +103,8 @@ STACK_SPECS: dict[str, StackSpec] = {
                     l2_leaf_reg=1,
                     learning_rate=0.05,
                     random_state=seed,
-                    verbose=0, allow_writing_files=False,
+                    verbose=0,
+                    allow_writing_files=False,
                 ),
             },
         ),
@@ -210,7 +221,12 @@ STACK_SPECS: dict[str, StackSpec] = {
             "CatBoost",
             ("rf", "dt", "gb"),
             lambda seed: CatBoostClassifier(
-                iterations=50, learning_rate=0.1, depth=3, random_state=seed, verbose=0, allow_writing_files=False
+                iterations=50,
+                learning_rate=0.1,
+                depth=3,
+                random_state=seed,
+                verbose=0,
+                allow_writing_files=False,
             ),
             {
                 "final_estimator__iterations": [50],
