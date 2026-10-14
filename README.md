@@ -115,7 +115,7 @@ crop-rec --help
 
 | Command | What it does |
 | --- | --- |
-| `crop-rec train classical` | Train a classifier (`--model dt rf nb lr svc knn adaboost gb xgb catboost all`; `--variant default tuned search`). |
+| `crop-rec train classical` | Train a classifier (`--model dt rf nb lr svc knn gb xgb catboost all`; `--variant default tuned search`). |
 | `crop-rec train stack` | Stacking ensemble, RF + GB + CatBoost base learners (`--meta svc` is the paper's best). |
 | `crop-rec train deep` | CNN, LSTM, CNN-LSTM, CNN-BiLSTM or TabNet (`--tune` runs the Optuna search). |
 | `crop-rec evaluate` | Metrics, confusion matrix and ROC curves of a saved model on the 20 % test split. |

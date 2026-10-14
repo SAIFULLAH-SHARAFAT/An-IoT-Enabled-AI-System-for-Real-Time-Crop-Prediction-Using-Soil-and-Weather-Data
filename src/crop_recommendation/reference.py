@@ -17,7 +17,6 @@ TABLE4_DEFAULT_ACCURACY: Final[dict[str, float]] = {
     "rf": 0.958,
     "lr": 0.836,
     "svc": 0.905,
-    "adaboost": 0.100,
     "gb": 0.955,
     "catboost": 0.926,
 }
@@ -30,7 +29,6 @@ FIG13_TUNED_ACCURACY: Final[dict[str, float]] = {
     "rf": 0.958,
     "svc": 0.897,
     "knn": 0.929,
-    "adaboost": 0.926,
     "gb": 0.945,
     "catboost": 0.949,
 }
@@ -43,7 +41,6 @@ TABLE5_STACKING: Final[dict[str, tuple[float, float]]] = {
     "knn": (0.940, 0.920),
     "lr": (0.945, 0.899),
     "svc": (0.959, 0.948),
-    "adaboost": (0.905, 0.890),
     "gb": (0.925, 0.898),
     "catboost": (0.932, 0.931),
 }

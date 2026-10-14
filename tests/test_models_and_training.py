@@ -31,7 +31,6 @@ def test_every_classical_spec_builds_both_variants() -> None:
         "lr",
         "svc",
         "knn",
-        "adaboost",
         "gb",
         "xgb",
         "catboost",
@@ -72,7 +71,7 @@ def test_search_grids_only_name_real_parameters() -> None:
 
 
 def test_stack_specs_match_table5() -> None:
-    assert set(STACK_SPECS) == {"dt", "rf", "nb", "knn", "lr", "svc", "adaboost", "gb", "catboost"}
+    assert set(STACK_SPECS) == {"dt", "rf", "nb", "knn", "lr", "svc", "gb", "catboost"}
     assert BEST_META == "svc"
     assert STACK_SPECS["svc"].base_keys == ("rf", "gb", "catboost")
     assert set(STACK_SPECS["rf"].base_keys) == {"dt", "gb", "catboost"}  # Table 5
@@ -151,9 +150,6 @@ def test_stack_experiments_keep_their_original_base_configurations() -> None:
     assert dict(build_stack(rf_spec, 42).estimators)["gb_base"].subsample == 0.9
 
     assert dict(build_stack(get_stack_spec("svc"), 42).estimators)["gb_base"].n_estimators == 150
-    assert (
-        dict(build_stack(get_stack_spec("adaboost"), 42).estimators)["rf_base"].bootstrap is False
-    )
     assert dict(build_stack(get_stack_spec("catboost"), 42).estimators)["rf_base"].max_depth == 5
 
 

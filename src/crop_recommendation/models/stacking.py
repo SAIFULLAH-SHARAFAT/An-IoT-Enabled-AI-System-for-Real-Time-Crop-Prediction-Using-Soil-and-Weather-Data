@@ -15,7 +15,6 @@ from typing import Any
 from catboost import CatBoostClassifier
 from sklearn.base import BaseEstimator
 from sklearn.ensemble import (
-    AdaBoostClassifier,
     GradientBoostingClassifier,
     RandomForestClassifier,
     StackingClassifier,
@@ -173,36 +172,6 @@ STACK_SPECS: dict[str, StackSpec] = {
             lambda seed: SVC(probability=True, random_state=seed),
             {"final_estimator__C": [0.1, 1.0], "final_estimator__kernel": ["linear", "rbf"]},
             cv=2,
-        ),
-        StackSpec(
-            "adaboost",
-            "AdaBoost",
-            _DEFAULT_BASE,
-            lambda seed: AdaBoostClassifier(random_state=seed),
-            {
-                "final_estimator__n_estimators": [50, 100],
-                "final_estimator__learning_rate": [0.01, 0.1],
-            },
-            cv=5,
-            base_overrides={
-                "rf": lambda seed: RandomForestClassifier(
-                    bootstrap=False,
-                    n_estimators=200,
-                    max_depth=15,
-                    min_samples_split=2,
-                    min_samples_leaf=1,
-                    random_state=seed,
-                ),
-                "gb": lambda seed: GradientBoostingClassifier(
-                    subsample=0.8,
-                    n_estimators=100,
-                    learning_rate=0.05,
-                    max_depth=4,
-                    min_samples_split=10,
-                    min_samples_leaf=5,
-                    random_state=seed,
-                ),
-            },
         ),
         StackSpec(
             "gb",

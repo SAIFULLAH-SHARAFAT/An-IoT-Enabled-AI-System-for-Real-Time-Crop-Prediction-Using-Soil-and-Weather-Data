@@ -14,7 +14,6 @@ from typing import Any
 from catboost import CatBoostClassifier
 from sklearn.base import BaseEstimator
 from sklearn.ensemble import (
-    AdaBoostClassifier,
     GradientBoostingClassifier,
     RandomForestClassifier,
 )
@@ -138,25 +137,6 @@ MODEL_SPECS: dict[str, ModelSpec] = {
                 "metric": ["euclidean", "manhattan", "minkowski"],
             },
             shuffled_cv=True,
-        ),
-        ModelSpec(
-            key="adaboost",
-            label="AdaBoost",
-            default=lambda seed: AdaBoostClassifier(random_state=seed),
-            tuned=lambda seed: AdaBoostClassifier(
-                estimator=DecisionTreeClassifier(max_depth=3),
-                learning_rate=1,
-                n_estimators=300,
-                random_state=seed,
-            ),
-            grid={
-                "n_estimators": [100, 200, 300],
-                "learning_rate": [0.01, 0.1, 0.5, 1],
-                "estimator": [
-                    DecisionTreeClassifier(max_depth=1),
-                    DecisionTreeClassifier(max_depth=3),
-                ],
-            },
         ),
         ModelSpec(
             key="gb",
