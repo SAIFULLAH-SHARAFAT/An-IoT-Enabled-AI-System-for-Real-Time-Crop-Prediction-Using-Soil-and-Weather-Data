@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the article below."
+title: "An IoT-enabled AI system for real-time crop prediction using soil and weather data in precision agriculture"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/SAIFULLAH-SHARAFAT/An-IoT-Enabled-AI-System-for-Real-Time-Crop-Prediction-Using-Soil-and-Weather-Data"
+authors:
+  - family-names: Sharafat
+    given-names: MD Shaifullah
+  - family-names: Kabya
+    given-names: Nilavro Das
+  - family-names: Emu
+    given-names: Rahimul Islam
+  - family-names: Ahmed
+    given-names: Mehrab Uddin
+  - family-names: Onik
+    given-names: Jakaria Chowdhury
+  - family-names: Islam
+    given-names: Mohammad Aminul
+  - family-names: Khan
+    given-names: Riasat
+preferred-citation:
+  type: article
+  title: "An IoT-enabled AI system for real-time crop prediction using soil and weather data in precision agriculture"
+  journal: "Smart Agricultural Technology"
+  volume: 12
+  start: 101263
+  year: 2025
+  doi: "10.1016/j.atech.2025.101263"
+  url: "https://www.sciencedirect.com/science/article/pii/S2772375525004940"
+  authors:
+    - family-names: Sharafat
+      given-names: MD Shaifullah
+    - family-names: Kabya
+      given-names: Nilavro Das
+    - family-names: Emu
+      given-names: Rahimul Islam
+    - family-names: Ahmed
+      given-names: Mehrab Uddin
+    - family-names: Onik
+      given-names: Jakaria Chowdhury
+    - family-names: Islam
+      given-names: Mohammad Aminul
+    - family-names: Khan
+      given-names: Riasat
