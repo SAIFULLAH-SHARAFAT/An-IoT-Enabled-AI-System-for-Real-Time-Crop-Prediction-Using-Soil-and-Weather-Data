@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -e ".[dev,explain,edge]"
+      - run: ruff check src tests scripts
+      - run: ruff format --check src tests scripts
+      - run: mypy
+      - name: Archived notebooks carry no outputs
+        run: python scripts/strip_notebook_outputs.py --check old/*.ipynb
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install (CPU PyTorch for the deep-model tests)
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -e ".[dev,explain,edge,deep]"
+      - run: pytest --cov --cov-report=term-missing
